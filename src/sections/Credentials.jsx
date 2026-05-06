@@ -4,7 +4,7 @@ const credentials = [
   { id: '[01]', title: 'Gold CyberPatriot Distinction', meta: '2024' },
   { id: '[02]', title: 'Keep Me Maryland Scholarship', meta: '$3,000 · 2025' },
   { id: '[03]', title: 'Howard County Executive Award of Recognition', meta: '2023' },
-  { id: '[04]', title: 'ARL Cybersecurity Academy Graduate', meta: 'Army Research Laboratory · 2024' },
+  { id: '[04]', title: 'ARL Cybersecurity Academy Graduate', meta: 'Applications Research Laboratory · 2024' },
   { id: '[05]', title: 'DoD Cybersecurity Accelerator', meta: 'The Washington Center · 2026' },
   { id: '[06]', title: 'Semester Academic Honors', meta: 'UMD · Spring 2025' },
 ];
