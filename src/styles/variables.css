@@ -1,0 +1,16 @@
+:root {
+  --bg: #0a0e14;
+  --bg-elev: #0f141c;
+  --bg-card: #131922;
+  --border: #1f2937;
+  --border-bright: #2d3748;
+  --text: #e6edf3;
+  --text-muted: #9ba8b8;
+  --text-dim: #6b7785;
+  --accent: #00ffa3;
+  --accent-dim: #00cc82;
+  --accent-glow: rgba(0, 255, 163, 0.15);
+  --cyan: #56d3ff;
+  --warn: #ffb454;
+  --pink: #ff7eb6;
+}

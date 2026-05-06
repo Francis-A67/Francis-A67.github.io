@@ -1,0 +1,33 @@
+.contact {
+  text-align: center;
+  padding: 140px 0 100px;
+}
+
+.contact-label {
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--accent);
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+}
+
+.contact h2 {
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  margin-bottom: 24px;
+  letter-spacing: -0.03em;
+}
+
+.contact p {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  max-width: 560px;
+  margin: 0 auto 40px;
+  line-height: 1.7;
+}
+
+.contact-grid {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}

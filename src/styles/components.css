@@ -1,0 +1,122 @@
+/* SECTION HEADER */
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 48px;
+  counter-increment: section-counter;
+}
+
+.section-header h2 {
+  font-size: clamp(1.6rem, 3vw, 2rem);
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+
+.section-header h2::before {
+  content: counter(section-counter, decimal-leading-zero) '. ';
+  color: var(--accent);
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 500;
+  font-size: 0.85em;
+  margin-right: 8px;
+}
+
+.section-header::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, var(--border-bright), transparent);
+  max-width: 280px;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 14px 24px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.2s;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-primary {
+  background: var(--accent-glow);
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+.btn-primary:hover {
+  background: var(--accent);
+  color: var(--bg);
+  box-shadow: 0 0 30px var(--accent-glow);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--border-bright);
+}
+
+.btn-ghost:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* STACK PILL */
+.stack-pill {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  padding: 5px 12px;
+  background: var(--bg-elev);
+  border: 1px solid var(--border-bright);
+  border-radius: 999px;
+  color: var(--text-muted);
+}
+
+/* PHOTO PLACEHOLDER */
+.photo-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-dim);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 24px;
+  background: linear-gradient(135deg, var(--bg-card), var(--bg-elev));
+}
+
+.photo-placeholder svg {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 16px;
+  opacity: 0.4;
+}
+
+.photo-placeholder code {
+  color: var(--accent);
+  font-size: 0.75rem;
+  margin-top: 8px;
+}
+
+/* FADE-IN ANIMATION */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

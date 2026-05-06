@@ -1,0 +1,51 @@
+.experience-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.exp-card {
+  padding: 28px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  border-left: 3px solid var(--accent);
+  transition: all 0.2s;
+}
+
+.exp-card:hover {
+  border-color: var(--border-bright);
+  border-left-color: var(--accent);
+  transform: translateX(4px);
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.exp-card h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.exp-card .exp-org {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.exp-date {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.82rem;
+  color: var(--text-dim);
+}
+
+.exp-card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
